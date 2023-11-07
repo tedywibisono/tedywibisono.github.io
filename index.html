@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tedy Wibisono</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/w-favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+    integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <input type="hidden" id="history">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+    <div class="container">
+
+      <div id="introduction" class="">
+        <h1><a href="#">Hi, I am Tedy Wibisono</a></h1>
+        <h2>I'm a Back End <span>developer</span> from Indonesia</h2>
+      </div>
+      <h1 id="salutation"></h1>
+      <input type="text" onblur="(function(){$('#okBtn').hide()})();return false;" name="visitor-name" id="ask-name" placeholder="May I have your name?"><br />
+      <button class="btn btn-success" onclick="(function(){$('#ask-name').trigger('change');$('#okBtn').hide()})();return false;" id="okBtn" style="margin-top:10px">OK</button>      
+      <button class="btn" id="notNow" style="margin-top:10px;background:#131e33;color:#eee">Not now</button>      
+      <button class="btn btn-md" id="backBtn" style="margin-top:10px;color:#18d26e;display: none;">
+        <h1>Back</h1>
+      </button>     
+
+    </div>
+  </header>
+
+  <section id="main-menu" class="services">
+    <div class="container">
+      <p id="opening-word"></p>
+      <div class="section-title">
+        <h2>Select menu</h2>
+      </div>
+  
+      <div class="row">
+        <div id="about" onclick="sectionOnClick.about()" class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
+            <div class="icon"><i class="bx bx-user"></i></div>
+            <h4><a href="#">About</a></h4>
+          </div>
+        </div>
+  
+        <div id="experience" onclick="sectionOnClick.experience()" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-time"></i></div>
+            <h4><a href="#">Experience</a></h4>
+          </div>
+        </div>
+  
+        <div id="portfolio" onclick="sectionOnClick.portfolio()" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-grid-alt"></i></div>
+            <h4><a href="#">Portfolio</a></h4>
+          </div>
+        </div>
+  
+        <div id="skill" onclick="sectionOnClick.skill()" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-list-check"></i></div>
+            <h4><a href="#">Skills</a></h4>
+          </div>
+        </div>
+  
+        <div id="education" onclick="sectionOnClick.education()" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-book-reader"></i></div>
+            <h4><a href="#">Education</a></h4>
+          </div>
+        </div>
+  
+        <div id="contact" onclick="sectionOnClick.contact()" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-phone"></i></div>
+            <h4><a href="#">Contact</a></h4>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- ======= About Section ======= -->
+  <section id="about-section" class="about">
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+      <div class="section-title">
+        <h2>About</h2>
+        <!-- <p>Learn more about me</p> -->
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/new_me.png" class="rounded-circle" style="width:100%;padding:20px 0 20px 0;" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Back End Developer</h3>
+          <p class="font-italic">
+            Back End Developers who can design, develop, test and maintain applications properly.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 20 Juli 2002</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Telegram:</strong> @TedyWibisono</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> tedywibi2932@gmail.com</li>
+                <!-- <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li> -->
+                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Kudus, Indonesia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>See Also</h3>
+      <div class="row">
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.experience()">
+          Experience
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.portfolio()">
+          Portfolio
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.skill()">
+          Skills
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.education()">
+          Education
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.contact()">
+          Contact
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- ======= Experience Section ======= -->
+  <section id="experience-section" class="experience">
+    <div class="container">
+    
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+    
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Back End Developer</h4>
+            <h5>Mei 2023 - Present</h5>
+            <p><em>PT Bromindo Mekar Mitra, Semarang, ID </em></p>
+            <p>
+            <ul>
+              <li>API Development and Testing: Develop and test API endpoints to ensure correct functionality and interaction between frontend and backend.</li>
+              <li>Performance Optimization: Ensures that the system runs efficiently and with fast response times. This involves optimizing database queries, using caching, and monitoring performance.</li>
+              <li>New Feature Development: Collaborate with frontend and product teams to develop new features within the app.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Machine operator </h4>
+                <h5>Jul 2020 - Jun 2021</h5>
+                <p><em>CV. Jaya Setia Plastik, Demak, ID </em></p>
+                <p>
+                <ul>
+                  <li>Run and control production machines in accordance with established guidelines and guidelines.</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+        </div>
+        <h3>See Also</h3>
+        <div class="row">
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.about()">
+            About
+          </div>
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.portfolio()">
+            Portfolio
+          </div>
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.skill()">
+            Skills
+          </div>
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.education()">
+            Education
+          </div>
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.contact()">
+            Contact
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Experience Section -->
+
+  <!-- ======= Skill Section ======= -->
+  <section id="skill-section" class="skill">
+    <div class="interests container">
+  
+      <div class="section-title">
+        <h2>Core Skills</h2>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="icon-box">
+              <i class="ri-flutter-fill"style="color: #5578ff;"></i>
+              <h3>Flutter</h3>
+            </div>
+            <br />
+            <span class="description">
+              Wrote high performance application considering data load factor, connection state and make it even
+              better with beautiful UI and animation.
+            </span>
+          </div>
+          <div class="col-lg-6 col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="fa fa-laravel" style="color: #ee5914;"></i>
+              <h3>Laravel</h3>
+            </div>
+            <br />
+            <span class="description">
+              Worked with data management, authentication and restful API service
+            </span>
+          </div>
+        </div>        
+      </div>
+      <div class="section-title" style="margin-top: 40px">
+        <h2>More Skills</h2>
+      
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="fa fa-php" style="color: #5578ff;"></i>
+              <h3>PHP</h3>
+            </div>
+            <br />
+            <span class="description"></span>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="fa fa-database" style="color: #ee5914;"></i>
+              <h3>SQL</h3>
+            </div>
+            <br />
+            <span class="description"></span>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="fa fa-git" style="color: #bfc200;"></i>
+              <h3>Git</h3>
+            </div>
+            <br />
+            <span class="description"></span>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="fa fa-code" style="color: #e62922;"></i>
+              <h3>RESTful API</h3>
+            </div>
+            <br />
+            <span class="description"></span>
+          </div>
+        </div>
+
+        <h3>See Also</h3>
+        <div class="row">
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.about()">
+            About
+          </div>
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.portfolio()">
+            Portfolio
+          </div>
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.experience()">
+            Experience
+          </div>
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.education()">
+            Education
+          </div>
+          <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.contact()">
+            Contact
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Skill Section -->
+
+  <!-- ======= Education Section ======= -->
+  <section id="education-section" class="education">
+    <div class="container">
+  
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-6">
+  
+          <div class="resume-item">
+            <h4>Universitas Muria Kudus</h4>
+            <h5>Mar 2021 - Present</h5>
+            <p><em>Computer Science </em></p>
+            <p>
+            <ul>
+              <li>Learned how to design application</li>
+              <li>Learned how to handle software complexity</li>
+              <li>Learn programming language</li>
+            </ul>
+            </p>
+          </div>
+
+          <div class="resume-item">
+            <h4>SMA 1 JEKULO</h4>
+            <h5>Jun 2017 - May 2020</h5>
+            <p><em>Social Sciences</em></p>
+          </div>
+
+        </div>
+      </div>
+      <h3>See Also</h3>
+      <div class="row">
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.about()">
+          About
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.portfolio()">
+          Portfolio
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.experience()">
+          Experience
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.skill()">
+          Skills
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.contact()">
+          Contact
+        </div>
+    </div>
+  </section>
+  <!-- End Education Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact-section" class="contact">
+    <div class="container">
+  
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+  
+      <div class="row mt-2">
+  
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>Kudus, Central Java, ID 59382</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/tedy.wibisono.969/" class="twitter"><i class="icofont-facebook"></i></a>
+              <a href="https://www.instagram.com/tedy_wibisono/" class="instagram"><i class="icofont-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/tedy-wibisono-679366196/" class="linkedin"><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>tedywibi2932@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+62 8951 6715 279</p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+  
+      <h3>See Also</h3>
+      <div class="row">
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.about()">
+          About
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.portfolio()">
+          Portfolio
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.experience()">
+          Experience
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.skill()">
+          Skills
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.education()">
+          Education
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio-section" class="portfolio">
+    <div class="container">
+  
+      <div class="section-title">
+        <h2>Portfolio</h2>
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="row portfolio-container">
+  
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/firecek/firecek-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>FireTruck</h4>
+              <p>Mobile Application</p>
+              <div class="portfolio-links">
+                <a href="portfolio-details/firecek-mobile.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details">
+                  Detail
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+  
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/firecek-b/ruang_warga_1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Ruang Warga (API)</h4>
+              <p>Mobile Application</p>
+              <div class="portfolio-links">
+                <a href="portfolio-details/firecek-mobile-b.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox"
+                  title="Portfolio Details">
+                  Detail
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <h3>See Also</h3>
+      <div class="row">
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.about()">
+          About
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.contact()">
+          Contact
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.experience()">
+          Experience
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.skill()">
+          Skills
+        </div>
+        <div class="col-md-2 btn-suggestion" onclick="sectionOnClick.education()">
+          Education
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/handleview.js"></script>
+</body>
+</html>
